@@ -1,0 +1,5 @@
+礼包Id,活序号,礼包名字,价格,前端显示获得道具,限购类型次数,排序Id,购买后获得道具,购买后获得积分,是否解锁馈赠
+Id,RankId,Name,RMB,Reward,RestrictedType,SortId,SeverReward,RewardScore,IfRequite
+int,int,string,float,list,int,int,list,int,int
+1,1,出道助力礼包,128,238:300;239:300;2:300,999,1,238:300;2:300,300,0
+2,1,巨星回馈礼包,328,242:1;238:1000;239:1000;2:1000,5,2,238:1000;2:1000,1000,1

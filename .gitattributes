@@ -1,0 +1,4 @@
+ro/run/log/out/game.out filter=lfs diff=lfs merge=lfs -text
+ro/etcd-v3.5.9-linux-amd64/default.etcd/member/wal/0.tmp filter=lfs diff=lfs merge=lfs -text
+ro/etcd-v3.5.9-linux-amd64/default.etcd/member/wal/0000000000000000-0000000000000000.wal filter=lfs diff=lfs merge=lfs -text
+ro/run/log/out/social1.out filter=lfs diff=lfs merge=lfs -text

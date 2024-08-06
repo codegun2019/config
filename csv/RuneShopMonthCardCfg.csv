@@ -1,0 +1,5 @@
+月卡类型,月卡名字,增加时长,购买奖励,每日奖励,总计奖励,价格,购买奖励,奖励邮件,月卡描述
+Id,Name,AddTime,BuyReward,DayReward,TotalReward,RMB,BuyRewardServer,RewardMail,Monthdec
+int,string,int,list,list,list,float,list,int,string
+1,普通月卡,30,2:300;26:300;228:1,2:100,2:3300,30,2:300;228:1,9,DscClubMonth1
+2,至尊月卡,30,2:980;26:980;229:1,2:400,2:12980,98,2:980;229:1,10,DscClubMonth3

@@ -1,0 +1,3 @@
+唯一id,合服编号,合服时间,合服预告
+Id,Number,Time,Tips
+int,list,string,string

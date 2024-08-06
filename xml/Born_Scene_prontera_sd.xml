@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SpawnPoints>
+  <SpawnPoint hSpace="4" rz="0" pz="162.8" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="93.6" ry="306.8456" py="0">
+    <Point rz="0" pz="163.4515" rx="0" px="90.89211" ry="306.8456" py="0" npcId="80009">
+    </Point>
+    <Point rz="0" pz="163.6996" rx="0" px="92.39959" ry="306.8456" py="0" npcId="80009">
+    </Point>
+    <Point rz="0" pz="168.1036" rx="0" px="93.36887" ry="306.8456" py="0" npcId="80009">
+    </Point>
+    <Point rz="0" pz="160.3415" rx="0" px="93.28072" ry="306.8456" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="162.1434" rx="0" px="94.8802" ry="306.8456" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="166.4725" rx="0" px="97.79861" ry="306.8456" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="136.73" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="86.36" ry="0.05712252" py="0">
+    <Point rz="0" pz="139.7046" rx="0" px="83.77017" ry="0.05712295" py="0" npcId="80011">
+    </Point>
+    <Point rz="0" pz="138.23" rx="0" px="86.36148" ry="0.05712295" py="0" npcId="80011">
+    </Point>
+    <Point rz="0" pz="138.8718" rx="0" px="91.21103" ry="0.05712295" py="0" npcId="80011">
+    </Point>
+    <Point rz="0" pz="136.2914" rx="0" px="84.22851" ry="0.05712295" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="135.2952" rx="0" px="87.70293" ry="0.05712295" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="137.1306" rx="0" px="90.58957" ry="0.05712295" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="103.61" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="107.24" ry="298.3926" py="0">
+    <Point rz="0" pz="102.3512" rx="0" px="102.6302" ry="298.3926" py="0" npcId="80012">
+    </Point>
+    <Point rz="0" pz="104.3233" rx="0" px="105.9204" ry="298.3926" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="109.1041" rx="0" px="107.9842" ry="298.3926" py="0" npcId="80012">
+    </Point>
+    <Point rz="0" pz="102.0081" rx="0" px="105.8126" ry="298.3926" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="105.6098" rx="0" px="109.5021" ry="298.3926" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="108.0993" rx="0" px="109.8501" ry="298.3926" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="100.1" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="171.8" ry="269.1413" py="0">
+    <Point rz="0" pz="98.99771" rx="0" px="169.9059" ry="269.1413" py="0" npcId="80012">
+    </Point>
+    <Point rz="0" pz="100.0776" rx="0" px="170.3003" ry="269.1413" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="104.6779" rx="0" px="169.166" ry="269.1413" py="0" npcId="80012">
+    </Point>
+    <Point rz="0" pz="96.35199" rx="0" px="171.9948" ry="269.1413" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="100.1422" rx="0" px="171.9403" ry="269.1413" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="105.4756" rx="0" px="171.8908" ry="269.1413" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="77" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="211.2" ry="302.5275" py="0">
+    <Point rz="0" pz="76.78684" rx="0" px="207.5552" ry="302.5275" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="77.80656" rx="0" px="209.9353" ry="302.5275" py="0" npcId="80012">
+    </Point>
+    <Point rz="0" pz="82.16807" rx="0" px="212.2595" ry="302.5275" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="75.77375" rx="0" px="208.9462" ry="302.5275" py="0" npcId="80013">
+    </Point>
+    <Point rz="0" pz="78.23145" rx="0" px="212.0353" ry="302.5275" py="0" npcId="80011">
+    </Point>
+    <Point rz="0" pz="83.57825" rx="0" px="213.8697" ry="302.5275" py="0" npcId="0">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="117.6" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="251.1" ry="267.2012" py="0">
+    <Point rz="0" pz="115.2501" rx="0" px="247.5557" ry="267.2012" py="0" npcId="80013">
+    </Point>
+    <Point rz="0" pz="117.5267" rx="0" px="249.6018" ry="267.2012" py="0" npcId="80013">
+    </Point>
+    <Point rz="0" pz="121.8078" rx="0" px="246.4141" ry="267.2012" py="0" npcId="80013">
+    </Point>
+    <Point rz="0" pz="116.6143" rx="0" px="252.0232" ry="267.2012" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="119.1389" rx="0" px="251.0135" ry="267.2012" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="123.0356" rx="0" px="249.8161" ry="267.2012" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="101.2" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="280.1" ry="290.8325" py="0">
+    <Point rz="0" pz="98.78027" rx="0" px="276.1048" ry="290.8325" py="0" npcId="80019">
+    </Point>
+    <Point rz="0" pz="101.7334" rx="0" px="278.6981" ry="290.8325" py="0" npcId="80019">
+    </Point>
+    <Point rz="0" pz="106.0663" rx="0" px="279.5932" ry="290.8325" py="0" npcId="80019">
+    </Point>
+    <Point rz="0" pz="97.49416" rx="0" px="280.218" ry="290.8325" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="103.3248" rx="0" px="282.2289" ry="290.8325" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="105.9908" rx="0" px="281.4047" ry="290.8325" py="0" npcId="0">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="153.2" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="306.48" ry="178.3571" py="0">
+    <Point rz="0" pz="151.1334" rx="0" px="307.5613" ry="178.3571" py="0" npcId="80019">
+    </Point>
+    <Point rz="0" pz="151.7006" rx="0" px="306.523" ry="178.3571" py="0" npcId="80019">
+    </Point>
+    <Point rz="0" pz="149.72" rx="0" px="301.5204" ry="178.3571" py="0" npcId="80019">
+    </Point>
+    <Point rz="0" pz="153.1025" rx="0" px="309.2102" ry="178.3571" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="152.7364" rx="0" px="303.9412" ry="178.3571" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="152.7498" rx="0" px="299.598" ry="178.3571" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="176.7" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="329.8" ry="253.4629" py="0">
+    <Point rz="0" pz="173.7538" rx="0" px="326.9396" ry="253.4629" py="0" npcId="80013">
+    </Point>
+    <Point rz="0" pz="176.273" rx="0" px="328.3621" ry="253.4629" py="0" npcId="80019">
+    </Point>
+    <Point rz="0" pz="181.3056" rx="0" px="326.6632" ry="253.4629" py="0" npcId="80013">
+    </Point>
+    <Point rz="0" pz="174.9447" rx="0" px="331.5337" ry="253.4629" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="177.3908" rx="0" px="331.0472" ry="253.4629" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="181.6498" rx="0" px="328.1992" ry="253.4629" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="213.1" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="303.3" ry="182.8068" py="0">
+    <Point rz="0" pz="209.1181" rx="0" px="306.8807" ry="182.8068" py="0" npcId="80024">
+    </Point>
+    <Point rz="0" pz="211.6018" rx="0" px="303.2266" ry="182.8068" py="0" npcId="80024">
+    </Point>
+    <Point rz="0" pz="209.8985" rx="0" px="296.7606" ry="182.8068" py="0" npcId="80024">
+    </Point>
+    <Point rz="0" pz="211.857" rx="0" px="306.0874" ry="182.8068" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="214.6589" rx="0" px="301.3649" ry="182.8068" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="212.9649" rx="0" px="296.8553" ry="182.8068" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="286.79" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="299.26" ry="173.1954" py="0">
+    <Point rz="0" pz="282.8147" rx="0" px="302.7574" ry="173.1954" py="0" npcId="80025">
+    </Point>
+    <Point rz="0" pz="285.3006" rx="0" px="299.4378" ry="173.1954" py="0" npcId="80025">
+    </Point>
+    <Point rz="0" pz="282.7162" rx="0" px="294.3786" ry="173.1954" py="0" npcId="80025">
+    </Point>
+    <Point rz="0" pz="285.8533" rx="0" px="302.6518" ry="173.1954" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="286.4834" rx="0" px="296.4649" ry="173.1954" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="287.3213" rx="0" px="293.2816" ry="173.1954" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="295.81" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="245.82" ry="65.25839" py="0">
+    <Point rz="0" pz="299.6363" rx="0" px="248.559" ry="65.25839" py="0" npcId="80012">
+    </Point>
+    <Point rz="0" pz="296.4378" rx="0" px="247.1823" ry="65.25839" py="0" npcId="80012">
+    </Point>
+    <Point rz="0" pz="292.1225" rx="0" px="249.6156" ry="65.25839" py="0" npcId="80012">
+    </Point>
+    <Point rz="0" pz="297.375" rx="0" px="243.5126" ry="65.25839" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="293.0614" rx="0" px="246.3634" ry="65.25839" py="0" npcId="80021">
+    </Point>
+    <Point rz="0" pz="291.0057" rx="0" px="247.0944" ry="65.25839" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="324.3" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="196.7" ry="140.9378" py="0">
+    <Point rz="0" pz="323.7746" rx="0" px="198.8635" ry="140.9378" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="323.1353" rx="0" px="197.6453" ry="140.9378" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="317.9753" rx="0" px="193.724" ry="140.9378" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="325.6761" rx="0" px="199.665" ry="140.9378" py="0" npcId="80021">
+    </Point>
+    <Point rz="0" pz="323.6536" rx="0" px="195.471" ry="140.9378" py="0" npcId="80021">
+    </Point>
+    <Point rz="0" pz="321.7836" rx="0" px="191.9266" ry="140.9378" py="0" npcId="80021">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="309.3" actorReadyDist="10" rx="0" type="1" vSpace="1.5" px="152.3" ry="86.83461" py="0">
+    <Point rz="0" pz="312.557" rx="0" px="153.7706" ry="86.83461" py="0" npcId="80019">
+    </Point>
+    <Point rz="0" pz="309.3828" rx="0" px="153.7977" ry="86.83461" py="0" npcId="80019">
+    </Point>
+    <Point rz="0" pz="303.592" rx="0" px="154.4521" ry="86.83461" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="313.1561" rx="0" px="150.8863" ry="86.83461" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="307.6812" rx="0" px="151.6082" ry="86.83461" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="304.4042" rx="0" px="151.8613" ry="86.83461" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="308.23" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="105.44" ry="100.1112" py="0">
+    <Point rz="0" pz="311.01" rx="0" px="107.8495" ry="100.1112" py="0" npcId="80013">
+    </Point>
+    <Point rz="0" pz="307.9666" rx="0" px="106.9167" ry="100.1112" py="0" npcId="80019">
+    </Point>
+    <Point rz="0" pz="302.3888" rx="0" px="106.1468" ry="100.1112" py="0" npcId="80013">
+    </Point>
+    <Point rz="0" pz="311.3935" rx="0" px="104.9887" ry="100.1112" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="305.8531" rx="0" px="106.3444" ry="100.1112" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="302.0102" rx="0" px="102.9223" ry="100.1112" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="265.3" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="81.9" ry="61.16582" py="0">
+    <Point rz="0" pz="269.3896" rx="0" px="81.6269" ry="61.16582" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="266.0234" rx="0" px="83.21405" ry="61.16582" py="0" npcId="80011">
+    </Point>
+    <Point rz="0" pz="260.6656" rx="0" px="87.11797" ry="61.16582" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="266.8595" rx="0" px="80.44493" ry="61.16582" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="263.9742" rx="0" px="84.01885" ry="61.16582" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="260.059" rx="0" px="86.13205" ry="61.16582" py="0" npcId="80011">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="249.4" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="112.7" ry="336.9738" py="0">
+    <Point rz="0" pz="252.4839" rx="0" px="109.0799" ry="336.9738" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="250.7804" rx="0" px="112.1133" ry="336.9738" py="0" npcId="80024">
+    </Point>
+    <Point rz="0" pz="254.6756" rx="0" px="116.4109" ry="336.9738" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="247.6845" rx="0" px="111.4374" ry="336.9738" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="251.0665" rx="0" px="114.9499" ry="336.9738" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="252.4821" rx="0" px="118.4695" ry="336.9738" py="0" npcId="0">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="243.5" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="169.4" ry="291.4215" py="3.4">
+    <Point rz="0" pz="242.1163" rx="0" px="164.7878" ry="291.4215" py="3.4" npcId="80024">
+    </Point>
+    <Point rz="0" pz="244.0478" rx="0" px="168.0036" ry="291.4215" py="3.4" npcId="80024">
+    </Point>
+    <Point rz="0" pz="249.9721" rx="0" px="169.0628" ry="291.4215" py="3.4" npcId="80024">
+    </Point>
+    <Point rz="0" pz="240.3819" rx="0" px="169.5972" ry="291.4215" py="3.4" npcId="0">
+    </Point>
+    <Point rz="0" pz="245.2488" rx="0" px="171.5696" ry="291.4215" py="3.4" npcId="0">
+    </Point>
+    <Point rz="0" pz="249.4458" rx="0" px="171.0749" ry="291.4215" py="3.4" npcId="0">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="3" rz="0" pz="221.6" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="221.4" ry="295.119" py="3.4">
+    <Point rz="0" pz="222.5521" rx="0" px="217.0897" ry="295.119" py="3.4" npcId="80025">
+    </Point>
+    <Point rz="0" pz="222.2368" rx="0" px="220.0419" ry="295.119" py="3.4" npcId="80025">
+    </Point>
+    <Point rz="0" pz="225.7115" rx="0" px="219.7951" ry="295.119" py="3.4" npcId="80025">
+    </Point>
+    <Point rz="0" pz="220.3674" rx="0" px="220.0146" ry="295.119" py="3.4" npcId="0">
+    </Point>
+    <Point rz="0" pz="223.3735" rx="0" px="221.9711" ry="295.119" py="3.4" npcId="0">
+    </Point>
+    <Point rz="0" pz="225.4395" rx="0" px="223.4576" ry="295.119" py="3.4" npcId="0">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="3" rz="0" pz="178.9" actorReadyDist="10" rx="0" type="1" vSpace="1.5" px="281.9" ry="329.0735" py="0">
+    <Point rz="0" pz="181.0593" rx="0" px="280.3217" ry="329.0735" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="180.1868" rx="0" px="281.1291" ry="329.0735" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="184.5979" rx="0" px="283.631" ry="329.0735" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="177.5462" rx="0" px="279.2199" ry="329.0735" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="180.4378" rx="0" px="283.6743" ry="329.0735" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="179.6306" rx="0" px="285.6114" ry="329.0735" py="0" npcId="0">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="161.1" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="189" ry="62.40041" py="0">
+    <Point rz="0" pz="164.074" rx="0" px="189.2841" ry="62.40041" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="161.795" rx="0" px="190.3293" ry="62.40041" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="157.724" rx="0" px="194.5019" ry="62.40041" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="164.9151" rx="0" px="188.1443" ry="62.40041" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="159.1781" rx="0" px="191.3256" ry="62.40041" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="156.0337" rx="0" px="192.242" ry="62.40041" py="0" npcId="0">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="3" rz="0" pz="171.07" actorReadyDist="10" rx="0" type="1" vSpace="1.5" px="148.07" ry="91.7759" py="0">
+    <Point rz="0" pz="173.798" rx="0" px="152.328" ry="91.7759" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="171.0236" rx="0" px="149.5693" ry="91.7759" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="167.1796" rx="0" px="152.0033" ry="91.7759" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="173.2995" rx="0" px="146.825" ry="91.7759" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="169.1984" rx="0" px="146.8353" ry="91.7759" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="167.9305" rx="0" px="147.4996" ry="91.7759" py="0" npcId="0">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="198.78" actorReadyDist="10" rx="0" type="1" vSpace="1.5" px="78.14" ry="156.1918" py="0">
+    <Point rz="0" pz="195.9207" rx="0" px="81.27396" ry="156.1918" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="197.4076" rx="0" px="78.74548" ry="156.1918" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="192.5053" rx="0" px="73.42858" ry="156.1918" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="200.19" rx="0" px="81.69155" ry="156.1918" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="198.8235" rx="0" px="75.03672" ry="156.1918" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="196.9914" rx="0" px="73.80634" ry="156.1918" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="4" rz="0" pz="196.5" actorReadyDist="20" rx="0" type="1" vSpace="1.5" px="39.6" ry="108.9978" py="0">
+    <Point rz="0" pz="197.9093" rx="0" px="44.78297" ry="108.9978" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="196.0117" rx="0" px="41.01829" ry="108.9978" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="190.4444" rx="0" px="39.64579" ry="108.9978" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="197.6283" rx="0" px="40.47329" ry="108.9978" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="194.3063" rx="0" px="38.73921" ry="108.9978" py="0" npcId="80000">
+    </Point>
+    <Point rz="0" pz="190.1893" rx="0" px="36.78232" ry="108.9978" py="0" npcId="80000">
+    </Point>
+  </SpawnPoint>
+  <SpawnPoint hSpace="0" rz="0" pz="80.9" actorReadyDist="10" rx="0" type="2" vSpace="0" px="340.4" ry="290.496" py="0">
+    <Point rz="0" pz="76.96008" rx="0" px="337.8596" ry="290.496" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="81.25021" rx="0" px="339.4633" ry="290.496" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="85.96173" rx="0" px="341.2245" ry="290.496" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="76.15863" rx="0" px="341.4888" ry="290.496" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="79.97562" rx="0" px="342.8729" ry="290.496" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="83.97978" rx="0" px="344.1561" ry="290.496" py="0" npcId="0">
+    </Point>
+    <Transfer rz="0" pz="88.58995" rx="0" px="321.7414" ry="110.4961" py="0">
+    </Transfer>
+    <Camera rz="0" pz="77" rx="36" px="320" ry="65" py="10">
+    </Camera>
+  </SpawnPoint>
+  <SpawnPoint hSpace="1" rz="0" pz="329.3" actorReadyDist="10" rx="0" type="2" vSpace="1" px="76.4" ry="166.8626" py="0">
+    <Point rz="0" pz="328.9716" rx="0" px="79.39296" ry="166.8626" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="328.3261" rx="0" px="76.6273" ry="166.8626" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="327.5443" rx="0" px="73.27732" ry="166.8626" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="332.3392" rx="0" px="78.73022" ry="166.8626" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="331.6566" rx="0" px="75.84997" ry="166.8626" py="0" npcId="0">
+    </Point>
+    <Point rz="0" pz="330.3973" rx="0" px="72.78601" ry="166.8626" py="0" npcId="0">
+    </Point>
+    <Transfer rz="0" pz="311.536" rx="0" px="79.70399" ry="346.3944" py="0">
+    </Transfer>
+    <Camera rz="0" pz="308" rx="36" px="81.5" ry="-15" py="12">
+    </Camera>
+  </SpawnPoint>
+  <SpawnPoint hSpace="1" rz="358.2318" pz="336.55" actorReadyDist="10" rx="0.316312" type="2" vSpace="1" px="329.05" ry="198.5742" py="0">
+    <Point rz="358.2318" pz="334.1859" rx="0.316312" px="331.092" ry="198.5742" py="0.07422307" npcId="0">
+    </Point>
+    <Point rz="358.2318" pz="335.6021" rx="0.316312" px="328.7315" ry="198.5742" py="-0.005520865" npcId="0">
+    </Point>
+    <Point rz="358.2318" pz="336.1071" rx="0.316312" px="325.2527" ry="198.5742" py="-0.1157582" npcId="0">
+    </Point>
+    <Point rz="358.2318" pz="337.4191" rx="0.316312" px="331.8305" ry="198.5742" py="0.08225898" npcId="0">
+    </Point>
+    <Point rz="358.2318" pz="338.5406" rx="0.316312" px="329.7189" ry="198.5742" py="0.01159338" npcId="0">
+    </Point>
+    <Point rz="358.2318" pz="338.145" rx="0.316312" px="325.9692" ry="198.5742" py="-0.1029079" npcId="0">
+    </Point>
+    <Transfer rz="1.782156" pz="314.1167" rx="359.7748" px="321.4061" ry="15.63359" py="-0.1339251">
+    </Transfer>
+    <Camera rz="0" pz="315" rx="36" px="329" ry="-2.5" py="10">
+    </Camera>
+  </SpawnPoint>
+</SpawnPoints>

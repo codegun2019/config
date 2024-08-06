@@ -1,0 +1,4 @@
+全局配置id,召唤物id,消耗资源,活动开始时间,活动结束时间,召唤时间,存活时间,变身,1等奖,2等奖,3等奖奖,中将概率,衰减概率,系统掉血,血条段数
+Id,SummonId,Consume,StartTime,EndTime,SummonTime,LifeTime,ChangePlayId,FirstRewardServer,SecondRewardServer,ThreeRewardServer,Roll,Roll2,AutoHp,HpSegment
+int,int,list,string,string,list,int,list,list,list,list,list,list,list,int
+1000,3002,203:1,1;2021-04-01 05:00:01,1;2021-04-09 05:00:01,10:30;15:00;19:00;22:30,604800,5000:1000;5000:1001;5000:1002;5000:1003;5000:1004;5000:1005;5000:1006;5000:1007;5000:1008;5000:1009,528:1;141:3;131:1,140:3;127:2;129:1,140:1;127:1;125:2,100;2000;1500,400;2000;1500,0,99

@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameEvent>
+    <!--type:   2	播放声音		1	隐藏血条	（hovertime）    17	使用相机动作	            27	其他玩家从停止状态恢复	37	关闭攻击抖动
+                4	播放特效		3	时间加减速	18	设置下落初速度	        28	隐藏场景	                38	镜头聚焦玩家
+				5	播放技能动作		9	相机震动	    19	设置表情	                29	显示场景	                39	朝向指向目标
+				6	召唤		10	进入单人模式	20	修改相机权重	            30	场景变暗	                41	划定目标为下一次攻击的目标玩家列表。此后的攻击目标直接选择列表内玩家
+				7	buff		11	离开单人模式	21	播放重复声音	            31	场景从变暗恢复	        42	锁定伤害数字位置
+				8	移动		12	缩放释放者	22	暂停其他玩家	            32	停止相机动作	            43	取消伤害数字位置的锁定
+				40	技能结束		13	释放者变形	23	恢复其他玩家暂停状态	    33	播放不受时间影响的特效		
+				44	技能吟唱		14	镜头变换	    24	隐藏其他玩家	            34	武器节点朝向目标		
+				45	持续施法		15	播放动画	    25	显示其他玩家           	35	恢复武器节点旋转		
+				46	打击点       16	无敌	    26	停止其他玩家（暂停+变暗）	36	播放特效，带播放选项
+                47	发射子弹     48	延时伤害    49	重新选择目标             50	更换技能（fromskill toskill）   51	召唤分身（npcId npcPos switchscene）-->
+	<buff id ="10000" name="剑士普攻1" endFrame="38">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="剑士普攻1">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		</event>
+		<event startFrame="11" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="11" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10085" valueType="int"/>
+		</event>
+        <event startFrame="14" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10084" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="10001" name="剑士普攻2" endFrame="38">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="剑士普攻2">
+		    <param name="animName" value="f_attack02" valueType="string"/>
+		</event>
+		<event startFrame="14" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="14" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10086" valueType="int"/>
+		</event>
+        <event startFrame="17" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10084" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="10002" name="剑士普攻3" endFrame="38">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="剑士普攻1">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		</event>
+		<event startFrame="11" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="11" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10085" valueType="int"/>
+		</event>
+        <event startFrame="14" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10084" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="10003" name="强力攻击" endFrame="38">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="剑士普攻2">
+		    <param name="animName" value="f_attack02" valueType="string"/>
+		</event>
+		<event startFrame="14" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="14" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10086" valueType="int"/>
+		</event>
+        <event startFrame="17" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10084" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="10004" name="重击" endFrame="54">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="30" type="44" dec="蓄力">
+		    <param name="animName" value="f_skill1_1" valueType="string"/>
+		</event>
+		<event startFrame="30" endFrame="0" type="5" affectBySing="ture" dec="刺出">
+		    <param name="animName" value="f_skill1_3" valueType="string"/>
+		</event>
+		<event startFrame="32" endFrame="0" type="4" affectBySing="ture" dec="法术特效">
+		    <param name="effect" value="10078" valueType="int"/>
+		</event>
+		<event startFrame="32" endFrame="0" type="2" affectBySing="ture" dec="法术声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="36" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10079" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="10005" name="紧急治疗" endFrame="60">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="30" type="44" dec="蓄力">
+		    <param name="animName" value="f_skill2_1" valueType="string"/>
+		</event>
+		<event startFrame="30" endFrame="0" type="5" affectBySing="ture" dec="治疗">
+		    <param name="animName" value="f_skill2_3" valueType="string"/>
+		</event>
+		<event startFrame="42" endFrame="0" type="4" affectBySing="ture" dec="法术特效">
+		    <param name="effect" value="10080" valueType="int"/>
+		</event>
+		<event startFrame="46" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="11004" name="王之守护" endFrame="30">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="释放技能">
+		    <param name="animName" value="f_skill_6_2" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+        <event startFrame="23" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="11005" name="挑衅" endFrame="30">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="释放技能">
+		    <param name="animName" value="f_skill4" valueType="string"/>
+		</event>
+		<event startFrame="10" endFrame="0" type="4" dec="法术特效">
+		    <param name="effect" value="10072" valueType="int"/>
+		</event>
+		<event startFrame="10" endFrame="0" type="2" dec="法术声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+        <event startFrame="13" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10084" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="11006" name="大地猛击" endFrame="35">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="释放技能">
+		    <param name="animName" value="f_skill2" valueType="string"/>
+		</event>
+		<event startFrame="18" endFrame="0" type="4" dec="法术特效">
+		    <param name="effect" value="10087" valueType="int"/>
+		</event>
+		<event startFrame="18" endFrame="0" type="2" dec="法术声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+        <event startFrame="21" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10084" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="11007" name="刚毅血脉" endFrame="30">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="释放技能">
+		    <param name="animName" value="f_skill_4" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+        <event startFrame="20" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="11008" name="狂击" endFrame="90">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="60" type="44" dec="蓄力">
+		    <param name="animName" value="f_skill1" valueType="string"/>
+		</event>
+		<event startFrame="30" endFrame="0" type="5" affectBySing="ture" dec="砍出">
+		    <param name="animName" value="f_skill1_2" valueType="string"/>
+		</event>
+		<event startFrame="32" endFrame="0" type="4" affectBySing="ture" dec="法术特效">
+		    <param name="effect" value="10078" valueType="int"/>
+		</event>
+		<event startFrame="32" endFrame="0" type="2" affectBySing="ture" dec="法术声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="36" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10079" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="11009" name="净化" endFrame="35">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="释放技能">
+		    <param name="animName" value="f_skill3" valueType="string"/>
+		</event>
+		<event startFrame="15" endFrame="0" type="4" dec="法术特效">
+		    <param name="effect" value="10088" valueType="int"/>
+		</event>
+		<event startFrame="15" endFrame="0" type="2" dec="法术声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+        <event startFrame="18" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10089" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+    <buff id ="11010" name="挑衅" endFrame="30">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="释放技能">
+		    <param name="animName" value="f_skill4" valueType="string"/>
+		</event>
+		<event startFrame="10" endFrame="0" type="4" dec="法术特效">
+		    <param name="effect" value="10072" valueType="int"/>
+		</event>
+		<event startFrame="10" endFrame="0" type="2" dec="法术声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+        <event startFrame="13" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10084" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="13004" name="连矢" endFrame="35">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="猎人连矢">
+		    <param name="animName" value="f_skill_4" valueType="string"/>
+		</event>
+		<event startFrame="3" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10036" valueType="int"/>
+		</event>
+		<event startFrame="3" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10002" valueType="int"/>
+		    <param name="hiteffect" value="10049" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+            <param name="rangeY" value="3000" valueType="int"/>
+		</event>
+		<event startFrame="8" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10036" valueType="int"/>
+		</event>
+		<event startFrame="8" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10002" valueType="int"/>
+		    <param name="hiteffect" value="10049" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+            <param name="rangeY" value="3000" valueType="int"/>
+		</event>
+		<event startFrame="13" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10036" valueType="int"/>
+		</event>
+		<event startFrame="13" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10002" valueType="int"/>
+		    <param name="hiteffect" value="10049" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+            <param name="rangeY" value="3000" valueType="int"/>
+		</event>
+		<event startFrame="18" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10036" valueType="int"/>
+		</event>
+		<event startFrame="18" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10002" valueType="int"/>
+		    <param name="hiteffect" value="10049" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+            <param name="rangeY" value="3000" valueType="int"/>
+		</event>
+	</buff>
+	<buff id ="13005" name="宁神射击" endFrame="73">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+	    <event startFrame="0" endFrame="45" type="44" dec="猎人吟唱">
+		    <param name="animName" value="f_skill_3_1" valueType="string"/>
+		    <param name="hiteffect" value="10001" valueType="int"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="45" endFrame="0" type="5" affectBySing="ture" dec="猎人攻击">
+		    <param name="animName" value="f_skill_3_3" valueType="string"/>
+		</event>
+		<event startFrame="45" endFrame="0" type="2" affectBySing="ture" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="45" endFrame="0" type="4" affectBySing="ture" dec="攻击特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+        <event startFrame="48" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10049" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="13006" name="霜冻箭" endFrame="73">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+	    <event startFrame="0" endFrame="45" type="44" dec="猎人吟唱">
+		    <param name="animName" value="f_skill_3_1" valueType="string"/>
+		    <param name="hiteffect" value="10001" valueType="int"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="45" endFrame="0" type="5" affectBySing="ture" dec="猎人攻击">
+		    <param name="animName" value="f_skill_3_3" valueType="string"/>
+		</event>
+		<event startFrame="45" endFrame="0" type="2" affectBySing="ture" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="45" endFrame="0" type="4" affectBySing="ture" dec="攻击特效">
+		    <param name="effect" value="10051" valueType="int"/>
+		</event>
+		<event startFrame="48" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10004" valueType="int"/>
+		    <param name="hiteffect" value="10050" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+            <param name="rangeY" value="3000" valueType="int"/>
+            <param name="buffid" value="99998" valueType="int"/>
+		</event>
+	</buff>
+	<buff id ="13007" name="箭矢风暴" endFrame="140">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="90" type="44" dec="猎人吟唱">
+		    <param name="animName" value="f_skill_1" valueType="string"/>
+		    <param name="hiteffect" value="10001" valueType="int"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="90" endFrame="0" type="5" dec="猎人攻击">
+		    <param name="animName" value="f_skill_3" valueType="string"/>
+		</event>
+		<event startFrame="90" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="90" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+        <event startFrame="95" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="110" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="125" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="140" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="12000" name="法师普攻1" endFrame="40">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="法师攻击">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="15" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10001" valueType="int"/>
+		    <param name="hiteffect" value="10033" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+            <param name="rangeY" value="3000" valueType="int"/>
+		</event>
+	</buff>
+	<buff id ="12001" name="法师普攻2" endFrame="40">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="法师攻击">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="15" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10001" valueType="int"/>
+		    <param name="hiteffect" value="10033" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+            <param name="rangeY" value="3000" valueType="int"/>
+		</event>
+	</buff>
+	<buff id ="12002" name="法师普攻3" endFrame="40">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="法师攻击">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="15" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10001" valueType="int"/>
+		    <param name="hiteffect" value="10033" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+            <param name="rangeY" value="3000" valueType="int"/>
+		</event>
+	</buff>
+	<buff id ="12003" name="强力攻击" endFrame="40">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="法师攻击">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="15" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10001" valueType="int"/>
+		    <param name="hiteffect" value="10033" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+            <param name="rangeY" value="3000" valueType="int"/>
+		</event>
+	</buff>
+	<buff id ="12004" name="法师冰箭术" endFrame="290">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="135" type="44" dec="法师吟唱">
+		    <param name="animName" value="f_skill_1" valueType="string"/>
+		    <param name="hiteffect" value="10034" valueType="int"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="135" endFrame="0" type="5" affectBySing="ture" dec="法师攻击">
+		    <param name="animName" value="f_skill_4" valueType="string"/>
+		</event>
+		<event startFrame="135" endFrame="0" type="48" affectBySing="ture" dec="延时伤害">
+		    <param name="effect" value="10031" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+            <param name="hurt_delay_frame" value="45" valueType="int"/>
+            <param name="delay_hurt_interval" value="13" valueType="int"/>
+            <param name="delay_hurt_count" value="9" valueType="int"/>
+		</event>
+		<event startFrame="148" endFrame="0" type="4" affectBySing="ture" dec="法术特效">
+		    <param name="effect" value="10032" valueType="int"/>
+		</event>
+	</buff>
+	<buff id ="12005" name="法师冰冻术" endFrame="110">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="75" type="44" dec="法师吟唱">
+		    <param name="animName" value="f_skill_1" valueType="string"/>
+		    <param name="hiteffect" value="10034" valueType="int"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="75" endFrame="0" type="5" affectBySing="ture" dec="法师攻击">
+		    <param name="animName" value="f_skill_3" valueType="string"/>
+		</event>
+		<event startFrame="100" endFrame="0" type="4" affectBySing="ture" dec="法术特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+		<event startFrame="100" endFrame="0" type="2" affectBySing="ture" dec="法术声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="105" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="12006" name="极寒漩涡" endFrame="170">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="105" type="44" dec="法师吟唱">
+		    <param name="animName" value="f_skill_1" valueType="string"/>
+		    <param name="hiteffect" value="10034" valueType="int"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="105" endFrame="0" type="5" affectBySing="ture" dec="法师攻击">
+		    <param name="animName" value="f_skill_3" valueType="string"/>
+		</event>
+		<event startFrame="130" endFrame="0" type="4" affectBySing="ture" dec="法术特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+		<event startFrame="130" endFrame="0" type="2" affectBySing="ture" dec="法术声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="135" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="150" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="165" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="12007" name="暴风雪" endFrame="180">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="135" type="45" dec="法师持续施法">
+		    <param name="animName" value="f_skill_5_1" valueType="string"/>
+		    <param name="hiteffect" value="10077" valueType="int"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="20" endFrame="0" type="4" dec="法术特效">
+		    <param name="effect" value="10075" valueType="int"/>
+		</event>
+		<event startFrame="30" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10076" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="45" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10076" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="60" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10076" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="75" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10076" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="90" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10076" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="105" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10076" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="120" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10076" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="135" endFrame="0" type="5" dec="法师攻击">
+		    <param name="animName" value="f_skill_5_3" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="12008" name="反制" endFrame="40">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="法师攻击">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="4" affectBySing="ture" dec="法术特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+		<event startFrame="20" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10076" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="12009" name="变化之风" endFrame="170">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="105" type="44" dec="法师吟唱">
+		    <param name="animName" value="f_skill_1" valueType="string"/>
+		    <param name="hiteffect" value="10034" valueType="int"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="105" endFrame="0" type="5" affectBySing="ture" dec="法师攻击">
+		    <param name="animName" value="f_skill_3" valueType="string"/>
+		</event>
+		<event startFrame="130" endFrame="0" type="4" affectBySing="ture" dec="法术特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+		<event startFrame="130" endFrame="0" type="2" affectBySing="ture" dec="法术声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="135" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="150" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="165" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="12010" name="魔力护盾" endFrame="110">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="75" type="44" dec="法师吟唱">
+		    <param name="animName" value="f_skill_1" valueType="string"/>
+		    <param name="hiteffect" value="10034" valueType="int"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="75" endFrame="0" type="5" affectBySing="ture" dec="法师攻击">
+		    <param name="animName" value="f_skill_3" valueType="string"/>
+		</event>
+		<event startFrame="100" endFrame="0" type="4" affectBySing="ture" dec="法术特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+		<event startFrame="100" endFrame="0" type="2" affectBySing="ture" dec="法术声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="105" endFrame="0" type="46" affectBySing="ture" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="14004" name="趁胜追击" endFrame="26">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="加buff动作">
+		    <param name="animName" value="f_skill_5" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+        <event startFrame="13" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="14005" name="脚踢" endFrame="50">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="待机动作">
+		    <param name="animName" value="f_idle" valueType="string"/>
+		</event>
+		<event startFrame="20" endFrame="0" type="5" dec="加buff动作">
+		    <param name="animName" value="f_skill_4" valueType="string"/>
+		</event>
+		<event startFrame="25" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="25" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10070" valueType="int"/>
+		</event>
+        <event startFrame="30" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10071" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="14006" name="音速投掷" endFrame="155">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="攻击动作">
+		    <param name="animName" value="f_skill_1" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+        <event startFrame="23" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="30" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="40" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="50" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="70" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="92" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="100" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="108" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="120" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="140" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="14007" name="回旋利刃" endFrame="60">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="60" type="5" dec="回旋利刃">
+		    <param name="animName" value="f_skill_3_01" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+        <event startFrame="11" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="19" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="26" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="34" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="41" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="49" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="56" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10024" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="60" endFrame="69" type="5" dec="后摇动作">
+		    <param name="animName" value="f_skill_3_03" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="14008" name="致盲" endFrame="50">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="待机动作">
+		    <param name="animName" value="f_idle" valueType="string"/>
+		</event>
+		<event startFrame="20" endFrame="0" type="5" dec="加buff动作">
+		    <param name="animName" value="f_skill_4" valueType="string"/>
+		</event>
+		<event startFrame="25" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="25" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10070" valueType="int"/>
+		</event>
+        <event startFrame="30" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10071" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="80000" name="巴风特左劈" endFrame="56">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		</event>
+		<event startFrame="13" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+        <event startFrame="22" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10055" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="80001" name="巴风特右劈" endFrame="56">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack02" valueType="string"/>
+		</event>
+		<event startFrame="18" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+        <event startFrame="22" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10056" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="80002" name="巴风特竖劈" endFrame="69">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack03" valueType="string"/>
+		</event>
+		<event startFrame="19" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+        <event startFrame="24" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10057" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="90000" name="怒雷强击" endFrame="345">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="320" type="45" dec="怒雷强击">
+		    <param name="animName" value="f_skill05_01" valueType="string"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		    <param name="hiteffect" value="10042" valueType="int"/>
+		</event>
+		<event startFrame="25" endFrame="320" type="4" dec="攻击特效">
+		    <param name="effect" value="10043" valueType="int"/>
+		</event>
+		<event startFrame="25" endFrame="320" type="4" dec="攻击特效">
+		    <param name="effect" value="10044" valueType="int"/>
+		</event>
+        <event startFrame="45" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="75" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="105" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="135" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="165" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="195" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="225" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="255" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="285" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="315" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="320" endFrame="344" type="5" dec="怒雷强击后摇">
+		    <param name="animName" value="f_skill05_03" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="90001" name="灵魂打击" endFrame="300">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="灵魂打击">
+		    <param name="animName" value="f_skill03_1" valueType="string"/>
+		</event>
+		<event startFrame="10" endFrame="0" type="4" dec="播放特效">
+		    <param name="effect" value="10046" valueType="int"/>
+		</event>
+		<event startFrame="15" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10003" valueType="int"/>
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="50" endFrame="0" type="5" dec="灵魂打击">
+		    <param name="animName" value="f_skill03_2" valueType="string"/>
+		</event>
+		<event startFrame="60" endFrame="0" type="49" dec="重新选择目标"/>
+		<event startFrame="60" endFrame="0" type="4" dec="播放特效">
+		    <param name="effect" value="10046" valueType="int"/>
+		</event>
+		<event startFrame="65" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10003" valueType="int"/>
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="100" endFrame="0" type="5" dec="灵魂打击">
+		    <param name="animName" value="f_skill03_3" valueType="string"/>
+		</event>
+		<event startFrame="110" endFrame="0" type="49" dec="重新选择目标"/>
+		<event startFrame="110" endFrame="0" type="4" dec="播放特效">
+		    <param name="effect" value="10046" valueType="int"/>
+		</event>
+		<event startFrame="115" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10003" valueType="int"/>
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="150" endFrame="0" type="5" dec="灵魂打击">
+		    <param name="animName" value="f_skill03_4" valueType="string"/>
+		</event>
+		<event startFrame="160" endFrame="0" type="49" dec="重新选择目标"/>
+		<event startFrame="160" endFrame="0" type="4" dec="播放特效">
+		    <param name="effect" value="10046" valueType="int"/>
+		</event>
+		<event startFrame="165" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10003" valueType="int"/>
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="200" endFrame="0" type="5" dec="灵魂打击">
+		    <param name="animName" value="f_skill03_2" valueType="string"/>
+		</event>
+		<event startFrame="210" endFrame="0" type="49" dec="重新选择目标"/>
+		<event startFrame="210" endFrame="0" type="4" dec="播放特效">
+		    <param name="effect" value="10046" valueType="int"/>
+		</event>
+		<event startFrame="215" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10003" valueType="int"/>
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="250" endFrame="0" type="5" dec="灵魂打击">
+		    <param name="animName" value="f_skill03_3" valueType="string"/>
+		</event>
+		<event startFrame="260" endFrame="0" type="49" dec="重新选择目标"/>
+		<event startFrame="260" endFrame="0" type="4" dec="播放特效">
+		    <param name="effect" value="10046" valueType="int"/>
+		</event>
+		<event startFrame="265" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10003" valueType="int"/>
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="90002" name="魔力护盾" endFrame="46">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="魔力护盾">
+		    <param name="animName" value="f_skill04" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+        <event startFrame="27" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="90003" name="邪恶降临" endFrame="30">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="召唤小怪">
+		    <param name="animName" value="f_skill02" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10001" valueType="int"/>
+		</event>
+        <event startFrame="14" endFrame="0" type="6" dec="召唤小怪">
+		    <param name="npcId" value="80027" valueType="int"/>
+            <param name="npcPos" value="1" valueType="int"/>
+		</event>
+		<event startFrame="16" endFrame="0" type="6" dec="召唤小怪">
+		    <param name="npcId" value="80027" valueType="int"/>
+            <param name="npcPos" value="2" valueType="int"/>
+		</event>
+		<event startFrame="18" endFrame="0" type="6" dec="召唤小怪">
+		    <param name="npcId" value="80027" valueType="int"/>
+            <param name="npcPos" value="3" valueType="int"/>
+		</event>
+		<event startFrame="20" endFrame="0" type="6" dec="召唤小怪">
+		    <param name="npcId" value="80027" valueType="int"/>
+            <param name="npcPos" value="4" valueType="int"/>
+		</event>
+	</buff>
+	<buff id ="90004" name="雷霆一击" endFrame="64">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="雷霆一击">
+		    <param name="animName" value="f_skill05" valueType="string"/>
+		</event>
+		<event startFrame="24" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="24" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10069" valueType="int"/>
+		</event>
+        <event startFrame="27" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10001" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="90005" name="怒吼切屏" endFrame="80">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="怒吼切屏">
+		    <param name="animName" value="f_skill04_1" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="20" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10068" valueType="int"/>
+		</event>
+		<event startFrame="25" endFrame="0" type="1" dec="隐藏血条">
+		    <param name="hovertime" value="2000" valueType="int"/>
+		</event>
+        <!--event startFrame="40" endFrame="0" type="51" dec="召唤分身">
+		    <param name="npcId" value="90001" valueType="int"/>
+            <param name="npcPos" value="5" valueType="int"/>
+            <param name="effect" value="10067" valueType="int"/>
+            <param name="switchscene" value="boss_scene" valueType="string"/>
+		</event-->
+	</buff>
+	<buff id ="99000" name="加速普攻1" endFrame="28">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		    <param name="animSpeed" value="200" valueType="int"/>
+		</event>
+		<event startFrame="8" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="8" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10052" valueType="int"/>
+		</event>
+        <event startFrame="12" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10055" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="99001" name="加速普攻2" endFrame="28">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack02" valueType="string"/>
+		    <param name="animSpeed" value="200" valueType="int"/>
+		</event>
+		<event startFrame="7" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="7" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10053" valueType="int"/>
+		</event>
+        <event startFrame="11" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10056" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="99002" name="加速普攻3" endFrame="35">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack03" valueType="string"/>
+		    <param name="animSpeed" value="200" valueType="int"/>
+		</event>
+		<event startFrame="7" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="7" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10054" valueType="int"/>
+		</event>
+        <event startFrame="12" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10057" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="99003" name="减速普攻1" endFrame="112">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		    <param name="animSpeed" value="50" valueType="int"/>
+		</event>
+		<event startFrame="35" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="35" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10052" valueType="int"/>
+		</event>
+        <event startFrame="40" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10055" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="99004" name="减速普攻2" endFrame="112">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack02" valueType="string"/>
+		    <param name="animSpeed" value="50" valueType="int"/>
+		</event>
+		<event startFrame="35" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="35" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10053" valueType="int"/>
+		</event>
+        <event startFrame="40" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10056" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="99005" name="减速普攻3" endFrame="138">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack03" valueType="string"/>
+		    <param name="animSpeed" value="50" valueType="int"/>
+		</event>
+		<event startFrame="44" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="44" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10054" valueType="int"/>
+		</event>
+        <event startFrame="48" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10057" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="99006" name="快乐巴风特捶地" endFrame="39">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack_big" valueType="string"/>
+		</event>
+		<event startFrame="22" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="22" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10065" valueType="int"/>
+		</event>
+        <event startFrame="24" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="99007" name="快乐巴风特喷火" endFrame="76">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_penhuo" valueType="string"/>
+		</event>
+		<event startFrame="19" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="19" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10066" valueType="int"/>
+		</event>
+        <event startFrame="27" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="99008" name="快乐巴风特捶地2" endFrame="35">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="巴风特普攻">
+		    <param name="animName" value="f_attack_big2" valueType="string"/>
+		</event>
+		<event startFrame="14" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="14" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10065" valueType="int"/>
+		</event>
+        <event startFrame="16" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10045" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="99998" name="boss被减速" endFrame="300">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="50" dec="减速更换慢速普攻">
+		    <param name="fromskill" value="90000;90001;90002" valueType="string"/>
+            <param name="toskill" value="99003;99004;99005" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="99999" name="boss狂暴" endFrame="5">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="50" dec="狂暴更换快速普攻">
+		    <param name="fromskill" value="90000;90001;90002" valueType="string"/>
+            <param name="toskill" value="99000;99001;99002" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="81000" name="噬人花地刺" endFrame="35">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="噬人花地刺">
+		    <param name="animName" value="f_attack01" valueType="string"/>
+		</event>
+		<event startFrame="15" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10005" valueType="int"/>
+		    <param name="hiteffect" value="10073" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="81002" name="噬人花群刺" endFrame="85">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="50" type="44" dec="噬人花吟唱">
+		    <param name="animName" value="f_skill1" valueType="string"/>
+		    <param name="hiteffect" value="10001" valueType="int"/>
+		    <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="68" endFrame="0" type="47" dec="发射子弹">
+		    <param name="bulletid" value="10005" valueType="int"/>
+		    <param name="hiteffect" value="10073" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="81001" name="疯兔技能" endFrame="28">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="5" dec="疯兔技能">
+		    <param name="animName" value="f_skill01" valueType="string"/>
+		</event>
+		<event startFrame="5" endFrame="0" type="2" dec="攻击声音">
+		    <param name="sound" value="music" valueType="string"/>
+		</event>
+		<event startFrame="15" endFrame="0" type="4" dec="攻击特效">
+		    <param name="effect" value="10074" valueType="int"/>
+		</event>
+        <event startFrame="18" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10071" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+		 <event startFrame="22" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10071" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="70000" name="增加20点ATK" endFrame="30">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+	    <event startFrame="0" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="70001" name="恢复100点生命" endFrame="30">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="70002" name="召唤1%最大生命值的护盾" endFrame="30">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+	<buff id ="70003" name="增加20点DEF" endFrame="30">
+	    <!--startFrame:开始帧  endFrame:结束帧  animName：动作名称 hit：0.buff不生效 1.buff生效   effect：特效  effectTarget：特效目标   effectLink：特效挂载点  Bullet：子弹id Sound：音效-->
+		<event startFrame="0" endFrame="0" type="46" dec="打击点">
+		    <param name="hiteffect" value="10047" valueType="int"/>
+            <param name="hitsound" value="music" valueType="string"/>
+		</event>
+	</buff>
+</FrameEvent>
